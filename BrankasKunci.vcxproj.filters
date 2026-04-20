@@ -16,35 +16,47 @@
     <Filter Include="Source Files\UI">
       <UniqueIdentifier>{378c2683-e6d9-449f-b2c1-fa4dabfee48d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Crypto">
-      <UniqueIdentifier>{a69aa39f-da46-485e-a9e7-1a3aab6ec77d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Vaults">
-      <UniqueIdentifier>{1c0ccb92-de4d-40b8-bd92-ff4b04050dca}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Config">
       <UniqueIdentifier>{1d749810-6faa-44e2-b926-9e8b6fd00eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Security">
+      <UniqueIdentifier>{a69aa39f-da46-485e-a9e7-1a3aab6ec77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{7faee629-105a-4a7c-a5fc-6e4d8819f945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Vaults">
+      <UniqueIdentifier>{7c1e9b85-bed8-4906-a35f-7b39360c8b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\User">
+      <UniqueIdentifier>{394e7694-940b-499d-9011-3bccae08533e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ui\main.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="src\crypto\crypto_engine.cpp">
-      <Filter>Source Files\Crypto</Filter>
+    <ClCompile Include="src\security\authenticator.cpp">
+      <Filter>Source Files\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="src\security\vault_handler.cpp">
+      <Filter>Source Files\Security</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\crypto\crypto_engine.h">
-      <Filter>Source Files\Crypto</Filter>
+    <ClInclude Include="src\security\authenticator.h">
+      <Filter>Source Files\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="src\security\vault_handler.h">
+      <Filter>Source Files\Security</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="vaults\user_vault.dat">
-      <Filter>Source Files\Vaults</Filter>
-    </None>
     <None Include="config\pepper.cfg">
       <Filter>Source Files\Config</Filter>
+    </None>
+    <None Include="data\user.dat">
+      <Filter>Source Files\Data\User</Filter>
     </None>
   </ItemGroup>
 </Project>

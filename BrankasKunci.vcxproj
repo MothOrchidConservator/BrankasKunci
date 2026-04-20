@@ -19,15 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\crypto\crypto_engine.cpp" />
+    <ClCompile Include="src\security\vault_handler.cpp" />
+    <ClCompile Include="src\security\authenticator.cpp" />
     <ClCompile Include="src\ui\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\crypto\crypto_engine.h" />
+    <ClInclude Include="src\security\vault_handler.h" />
+    <ClInclude Include="src\security\authenticator.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="config\pepper.cfg" />
-    <None Include="vaults\user_vault.dat" />
+    <None Include="data\user.dat" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

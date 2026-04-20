@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="BrankasKunci.vcxproj" />
+  <Project Path="BrankasKunci.vcxproj" Id="57ccb9cd-9fad-4b29-a28b-e56f719b905b" />
 </Solution>
