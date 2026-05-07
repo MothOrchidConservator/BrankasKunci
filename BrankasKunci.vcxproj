@@ -22,10 +22,12 @@
     <ClCompile Include="src\security\vault_handler.cpp" />
     <ClCompile Include="src\security\authenticator.cpp" />
     <ClCompile Include="src\ui\main.cpp" />
+    <ClCompile Include="src\utils\secure_allocator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\security\vault_handler.h" />
     <ClInclude Include="src\security\authenticator.h" />
+    <ClInclude Include="src\utils\secure_allocator.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="config\pepper.cfg" />

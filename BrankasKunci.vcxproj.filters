@@ -31,6 +31,9 @@
     <Filter Include="Source Files\Data\User">
       <UniqueIdentifier>{394e7694-940b-499d-9011-3bccae08533e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{83af0f65-bba2-42b8-8f98-bbdbc4425d20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ui\main.cpp">
@@ -42,6 +45,9 @@
     <ClCompile Include="src\security\vault_handler.cpp">
       <Filter>Source Files\Security</Filter>
     </ClCompile>
+    <ClCompile Include="src\utils\secure_allocator.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\security\authenticator.h">
@@ -49,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="src\security\vault_handler.h">
       <Filter>Source Files\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\secure_allocator.h">
+      <Filter>Source Files\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
