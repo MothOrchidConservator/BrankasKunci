@@ -45,9 +45,6 @@
     <ClCompile Include="src\security\vault_handler.cpp">
       <Filter>Source Files\Security</Filter>
     </ClCompile>
-    <ClCompile Include="src\utils\secure_allocator.cpp">
-      <Filter>Source Files\Utils</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\security\authenticator.h">

@@ -2,31 +2,33 @@
 #define vault_handler_H
 
 #include <fstream>
-#include <string>
-#include <unordered_map>   
+#include <string>  
 #include <sodium.h>
+#include "../utils/secure_allocator.h"
 
 class vault_handler
 {
 public:
-    vault_handler(string filename);
+    vault_handler(std::string username, std::string vaultAddress, SecureString vaultPassword, SecureString vaultPepper);
     ~vault_handler();
 
     void CreateVault();
-    std::string ReadVault();
-    void UpdateVault(const std::string& newData);
+    SecureString ReadVault();
+    void UpdateVault(const SecureString& newData);
     void DeleteVault();
 
-    unsigned char* vaultKey;
 
 private:
-    std::string DeriveKey();
-    void Encrypt(std::string password, std::string pepperAddress);
-    void Decrypt(std::string password, std::string pepperAddress);
-
-    std::string key;
-
-    std::unordered_map<std::string, std::string> vaultData;
+    void DeriveKey(SecureString vaultPassword, SecureString vaultPepper);
+    void Encrypt();
+    void Decrypt();
+    std::string vaultName;
+    std::string vaultAddress;
+    SecureBuffer vaultKey;
+    SecureString vaultData;
+    SecureString vaultPassword;
+    SecureString vaultPepper;
+    
 };
 
 #endif // vault_handler_H
